@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive sidebar Menu | Dark/Light Mode - Bedimcode</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <header class="header" id="header">
+         <div class="header__container">
+            <a href="#" class="header__logo">
+               <i class="ri-cloud-fill"></i>
+               <span>RESAKA</span>
+            </a>
+            
+            <button class="header__toggle" id="header-toggle">
+               <i class="ri-menu-line"></i>
+            </button>
+         </div>
+      </header>
+
+      <!--=============== SIDEBAR ===============-->
+      <nav class="sidebar" id="sidebar">
+         <div class="sidebar__container">
+            <div class="sidebar__user">
+               <div class="sidebar__img">
+                  <img src="assets/img/perfil.png" alt="image">
+               </div>
+   
+               <div class="sidebar__info">
+                  <h3>RESAKA</h3>
+                  <span>resakagen3@email.com</span>
+               </div>
+            </div>
+
+            <div class="sidebar__content">
+               <div>
+                  <h3 class="sidebar__title">MENU UTAMA</h3>
+
+                  <div class="sidebar__list">
+                     <a href="#" class="sidebar__link active-link" onclick="showSection('beranda')">
+                        <i class="ri-home-5-fill"></i>
+                        <span>Dashboard</span>
+                     </a>
+                     
+                     <a href="#" class="sidebar__link" onclick="showSection('sejarah')">
+                        <i class="ri-book-open-fill"></i>
+                        <span>Sejarah</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link" onclick="showSection('filosofi')">
+                        <i class="ri-lightbulb-fill"></i>
+                        <span>Filosofi & Makna</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link" onclick="showSection('gerakan')">
+                        <i class="ri-run-fill"></i>
+                        <span>Gerakan & Khas</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link"onclick="showSection('nilai')">
+                        <i class="ri-award-fill"></i>
+                        <span>Nilai Budaya</span>
+                     </a>
+                  </div>
+               </div>
+
+               <div>
+                  <h3 class="sidebar__title">INFORMASI</h3>
+
+                  <div class="sidebar__list">
+                     <a href="#" class="sidebar__link"onclick="showSection('perkembangan')">
+                        <i class="ri-line-chart-fill"></i>
+                        <span>Perkembangan</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link" onclick="showSection('tim')">
+                        <i class="ri-team-fill"></i>
+                        <span>Tim & Report</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link" onclick="showSection('survei')">
+                        <i class="ri-clipboard-fill"></i>
+                        <span>Survei</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="sidebar__actions">
+               <button>
+                  <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button">
+                     <span>Theme</span>
+                  </i>
+               </button>
+
+               <button class="sidebar__link">
+                  <i class="ri-logout-box-r-fill"></i>
+                  <span>Log Out</span>
+               </button>
+            </div>
+         </div>
+      </nav>
+
+      <main class="main container" id="main">
+
+   <!-- ===== DASHBOARD ===== -->
+   <section id="beranda">
+      <h1>Robot Tari</h1>
+
+      <p>Robot penari yang membawakan Tari Merak</p>
+
+      <img src="assets\img\rotar.jpeg" alt="Robot Resaka">
+
+      <p>
+         Proyek robot penari yang dirancang untuk menampilkan 
+         gerakan Tari Merak secara otomatis. Proyek ini menggabungkan seni tradisional 
+         dengan teknologi modern.
+      </p>
+
+      <div class="cards">
+         <div class="card">
+            <h3>Tari</h3>
+            <p>Tari Merak</p>
+         </div>
+
+         <div class="card">
+            <h3>Teknologi</h3>
+            <p>Sistem robotika</p>
+         </div>
+
+         <div class="card">
+            <h3>Tujuan</h3>
+            <p>Edukasi & inovasi</p>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- ===== FILOSOFI ===== -->
+   <section id="filosofi" style="display: none;">
+      <h1>Filosofi dan Makna Tari Merak</h1>
+
+      <img src="assets\img\filsuf_1.jpeg" alt="Tari Merak">
+
+      <p>
+      Tari Merak merupakan wujud karya seni yang terinspirasi dari kekaguman manusia terhadap pesona alam, khususnya keindahan burung merak. 
+      Warna-warni bulu ekor yang memikat serta gerakannya yang anggun di alam bebas menjadi dasar utama dalam penciptaan tarian ini.
+      </p>
+
+      <p>
+         Melalui rangkaian gerakan yang ditampilkan, Tari Merak tidak hanya menyuguhkan keindahan secara visual, tetapi juga merepresentasikan 
+         hubungan yang selaras antara manusia dan lingkungan sekitarnya.
+      </p>
+
+      <p>
+         Setiap gerakan dalam tarian ini disusun dengan penuh kelembutan, keluwesan, dan keseimbangan, sehingga mencerminkan nilai keanggunan 
+         yang mendalam. Keanggunan tersebut tidak hanya terlihat dari penampilan luar, tetapi juga menggambarkan sikap dan perilaku yang terjaga.
+      </p>
+
+      <p>
+         Di sisi lain, Tari Merak juga mengandung makna tentang pentingnya rasa percaya diri. Hal ini terinspirasi dari perilaku burung merak 
+         jantan yang dengan yakin memperlihatkan keindahan bulunya untuk menarik perhatian.
+      </p>
+
+      <img src="assets\img\filsuf_2.jpeg" alt="Tari Merak 2">
+
+      <p>
+         Sebagai bagian dari budaya Jawa Barat, Tari Merak mencerminkan karakter masyarakat Sunda yang menjunjung tinggi keramahan, kesantunan, 
+         dan keharmonisan.
+      </p>
+
+      <p>
+         Tari ini juga sering dipentaskan dalam berbagai acara penyambutan sebagai bentuk penghormatan kepada tamu.
+      </p>
+
+      <p>
+         Dengan demikian, Tari Merak tidak hanya berfungsi sebagai hiburan semata, tetapi juga sebagai media penyampai nilai-nilai kehidupan, 
+         seperti keindahan, keanggunan, rasa percaya diri, serta keharmonisan.
+      </p>
+   </section>
+
+   <!-- ===== PERKEMBANGAN ===== -->
+   <section id="perkembangan" style="display: none;">
+      <h1>TRANSFORMASI DAN ADAPTASI TARI MERAK DALAM ARUS ZAMAN</h1>
+
+      <p>
+         Tari Merak menunjukkan bahwa seni tradisional tidak selalu bersifat statis, 
+         melainkan mampu berkembang mengikuti perubahan zaman. Adaptasi ini menjadi kunci 
+         utama agar tarian tetap relevan di tengah masyarakat modern yang terus 
+         mengalami perubahan pola pikir, teknologi, dan selera hiburan. 
+      </p>
+
+      <p>
+         Salah satu bentuk adaptasi yang paling terlihat adalah pada inovasi gerakan. Dalam 
+         perkembangannya, koreografi Tari Merak tidak lagi terbatas pada pola gerak tradisional yang 
+         kaku. Para koreografer mulai menambahkan variasi gerakan yang lebih dinamis, cepat, dan 
+         atraktif tanpa menghilangkan karakter dasar tarian. Gerakan yang sebelumnya cenderung 
+         lembut kini dipadukan dengan variasi ritme yang lebih kompleks, sehingga mampu menarik 
+         perhatian generasi muda yang cenderung menyukai pertunjukan visual yang lebih energik.
+      </p>
+
+      <p>
+         Selain itu, adaptasi juga terlihat pada perubahan kostum. Kostum Tari Merak yang dahulu 
+         yang lebih ringan, fleksibel, dan nyaman digunakan. Perkembangan teknologi tekstil 
+         memungkinkan pembuatan kostum dengan warna yang lebih cerah dan tahan lama. Bahkan, 
+         dalam beberapa pertunjukan modern, kostum dilengkapi dengan elemen tambahan seperti 
+         lampu LED untuk memberikan efek visual yang lebih menarik di atas panggung. Hal ini 
+         menunjukkan bahwa aspek visual menjadi salah satu faktor penting dalam mempertahankan 
+         daya tarik tarian di era modern.
+      </p>
+
+      <p>
+         Adaptasi berikutnya terlihat pada penggunaan teknologi dalam pertunjukan. Jika dahulu Tari 
+         Merak hanya ditampilkan secara sederhana, kini pertunjukan sering dipadukan dengan tata 
+         cahaya (lighting), efek visual digital, dan desain panggung yang lebih kompleks. Penggunaan 
+         teknologi ini tidak hanya memperindah tampilan, tetapi juga menciptakan pengalaman baru 
+         bagi penonton. Pertunjukan menjadi lebih imersif dan mampu bersaing dengan bentuk 
+         hiburan modern lainnya seperti konser musik atau pertunjukan multimedia. 
+      </p>
+
+      <img src="assets\img\prk1.jpeg" alt="Perkembangan 1">
+
+      <p>
+         Selain itu, Tari Merak juga mengalami perkembangan melalui kolaborasi dengan berbagai jenis 
+         seni lain. Dalam beberapa kesempatan, tarian ini dipadukan dengan musik modern, tari 
+         kontemporer, bahkan seni pertunjukan digital atau berbasis elektronik. Kolaborasi ini 
+         menciptakan bentuk baru yang tetap mempertahankan identitas Tari Merak, namun dikemas 
+         dalam gaya yang lebih sesuai dengan selera masa kini. Dengan cara ini, Tari Merak tidak hanya 
+         bertahan sebagai warisan budaya, tetapi juga menjadi bagian dari inovasi seni yang terus berkembang. 
+      </p>
+
+      <img src="assets\img\prk2.jpeg" alt="Perkembangan 2">
+
+      <p>
+         Perkembangan lain yang sangat signifikan adalah pemanfaatan media digital. Di era internet, 
+         Tari Merak tidak lagi terbatas pada panggung pertunjukan fisik. Banyak penari dan komunitas 
+         seni yang memanfaatkan platform seperti YouTube, Instagram, dan TikTok untuk 
+         memperkenalkan tarian ini kepada masyarakat luas. Video pertunjukan Tari Merak dapat 
+         dengan mudah diakses oleh siapa saja, bahkan hingga ke luar negeri. Hal ini memperluas 
+         jangkauan audiens dan meningkatkan eksistensi tarian di tingkat global.
+      </p>
+
+      <p>
+         Media sosial juga memberikan ruang bagi kreativitas generasi muda dalam 
+         menginterpretasikan Tari Merak. Banyak penari muda yang menggabungkan unsur tradisional 
+         dengan gaya modern, seperti pengambilan video yang sinematik atau penggabungan dengan 
+         tren musik populer. Meskipun terkadang menuai pro dan kontra, fenomena ini menunjukkan 
+         bahwa Tari Merak tetap hidup dan berkembang di tengah perubahan zaman. Namun, 
+         modernisasi yang berlebihan juga berpotensi mengurangi nilai tradisional jika tidak dijaga dengan baik.
+      </p>
+
+      <img src="assets\img\prk3.jpeg" alt="Perkembangan 3">
+
+      <p>
+         Dalam dunia pendidikan dan pelatihan seni, adaptasi juga terjadi melalui metode pengajaran. 
+         Sanggar seni dan institusi pendidikan kini tidak hanya mengajarkan gerakan secara 
+         konvensional, tetapi juga memanfaatkan media digital sebagai sarana pembelajaran. Video 
+         tutorial, kelas online, dan dokumentasi digital membantu proses belajar menjadi lebih 
+         fleksibel dan mudah diakses. Hal ini sangat penting untuk menarik minat generasi muda yang lebih akrab dengan teknologi.
+      </p>
+
+      <p>
+         Selain itu, pengaruh globalisasi juga menjadi tantangan tersendiri. Masuknya budaya asing 
+         yang lebih populer di kalangan generasi muda dapat menggeser minat terhadap seni 
+         tradisional. Untuk mengatasi hal ini, diperlukan strategi yang kreatif dan inovatif agar Tari 
+         Merak tetap menarik dan relevan. Salah satu caranya adalah dengan terus melakukan 
+         pembaruan tanpa meninggalkan akar budaya yang menjadi dasar tarian tersebut.
+      </p>
+
+      <p>
+         Di tingkat internasional, Tari Merak sering ditampilkan dalam berbagai acara budaya sebagai 
+         representasi kekayaan seni Indonesia. Hal ini menunjukkan bahwa adaptasi yang dilakukan 
+         tidak hanya bertujuan untuk mempertahankan eksistensi di dalam negeri, tetapi juga untuk 
+         memperkenalkan budaya Indonesia ke dunia. Dengan kemasan yang lebih modern dan 
+         menarik, Tari Merak mampu bersaing di panggung global tanpa kehilangan identitasnya.
+      </p>
+
+      <p>
+         Secara keseluruhan, perkembangan Tari Merak dalam beradaptasi dengan zaman 
+         menunjukkan bahwa seni tradisional memiliki fleksibilitas yang tinggi. Melalui inovasi gerakan, 
+         modernisasi kostum, pemanfaatan teknologi, kolaborasi seni, serta penggunaan media digital, 
+         Tari Merak berhasil mempertahankan eksistensinya di tengah perubahan zaman. Adaptasi ini 
+         tidak hanya membuat tarian tetap hidup, tetapi juga membuka peluang untuk terus berkembang di masa depan.
+      </p>
+
+      <p>
+         Dengan pendekatan yang tepat, Tari Merak dapat terus menjadi bagian penting dari identitas 
+         budaya Indonesia sekaligus menjadi inspirasi bagi perkembangan seni di era modern. Kunci 
+         utama dari keberhasilan adaptasi ini adalah kemampuan untuk menggabungkan nilai 
+         tradisional dengan inovasi modern secara seimbang. Dengan demikian, Tari Merak tidak hanya 
+         menjadi warisan budaya yang dilestarikan, tetapi juga menjadi karya seni yang terus 
+         berkembang dan relevan sepanjang waktu.
+      </p>
+   </section>
+
+   <!-- ===== NILAI BUDAYA ===== -->
+   <section id="nilai" style="display: none;">
+      <h1>Nilai Budaya Tari Merak</h1>
+
+      <img src="assets\img\perk_1.jpeg" alt="Tari Merak 11">
+
+      <p>
+         Tari Merak merupakan salah satu tarian tradisional yang berasal dari Jawa Barat
+         dan menggambarkan keindahan serta perilaku burung merak. Tarian ini tidak hanya 
+         memikat melalui gerakan yang anggun dan kostum yang berwarna-warni, tetapi juga 
+         mengandung berbagai nilai budaya yang penting.
+      </p>
+
+      <ul>
+         <li>
+            <strong>Nilai Keindahan dan Estetika</strong><br>
+            Tari Merak menampilkan gerakan yang lembut, lincah, dan penuh pesona. Busana 
+            penari yang menyerupai bulu merak memperkuat unsur keindahan seni tradisional Sunda.
+         </li>
+
+         <li>
+            <strong>Nilai Pelestarian Budaya</strong><br>
+            Sebagai warisan budaya daerah budaya suku Sunda, Tari Merak menjadi simbol 
+            kekayaan seni Jawa Barat. Pementasan tari ini membantu mengenalkan budaya lokal 
+            kepada generasi muda maupun masyarakat luas.
+         </li>
+
+         <li>
+            <strong>Nilai Kesopanan dan Keanggunan</strong><br>
+            Gerakan dalam Tari Merak mencerminkan sikap anggun, sopan, dan penuh kelembutan. 
+            Nilai ini mengajarkan pentingnya menjaga perilaku dan etika dalam kehidupan sehari-hari.
+         </li>
+
+         <li>
+            <strong>Nilai Kebersamaan dan Kerja Sama</strong><br>
+            Tari Merak sering ditampilkan secara berkelompok, sehingga membutuhkan kekompakan antarpenari. 
+            Hal ini mencerminkan pentingnya kerja sama dan kebersamaan dalam mencapai keharmonisan.
+         </li>
+
+         <li>
+            <strong>Nilai Penghargaan terhadap Alam</strong><br>
+            Inspirasi Tari Merak berasal dari burung merak, yang menunjukkan hubungan erat antara 
+            manusia dengan alam. Tarian ini mengajarkan rasa kagum serta kepedulian terhadap keindahan satwa dan lingkungan.
+         </li>
+      </ul>
+
+      <img src="assets\img\perk_2.jpeg" alt="Tari Merak 22">
+
+      <p>
+         Melalui nilai-nilai tersebut, Tari Merak tidak hanya menjadi hiburan, tetapi juga media 
+         pendidikan budaya yang memperkaya identitas bangsa Indonesia.
+      </p>
+   </section>
+
+   <!-- ===== SEJARAH ===== -->
+   <section id="sejarah" style="display: none;">
+      <h1>Sejarah Tari Merak</h1>
+
+      <img src="assets\img\sej1.jpeg" alt="Sejarah Tari Merak 1">
+
+      <p>
+         Tari Merak merupakan salah satu jenis tari kreasi baru yang berasal dari tanah Pasundan, Jawa Barat,
+         dan diciptakan sekitar tahun 1950-an. Tarian ini dikoreografi pertama kali oleh seniman 
+         bernama Raden Tjetje Somantri. Inspirasi penciptaan tarian ini datang dari kehidupan burung 
+         merak, khususnya perilaku burung merak jantan yang mengepakkan sayap indahnya untuk 
+         menarik perhatian merak betina. Melalui pengamatan terhadap keanggunan dan keindahan 
+         gerakan burung tersebut, Raden Tjetje menyusun rangkaian gerak yang memadukan unsur tari 
+         tradisional Sunda dengan interpretasi artistik yang lebih modern dan dinamis. Pada awalnya, 
+         Tari Merak diciptakan sebagai bagian dari sendratari, namun seiring berjalannya waktu, tarian 
+         ini berdiri sendiri sebagai tarian lepas yang sangat populer.
+      </p>
+
+      <img src="assets\img\sej2.jpeg" alt="Sejarah Tari Merak 2">
+
+      <p>
+         Perkembangan Tari Merak mengalami perubahan besar pada tahun 1960-an melalui sentuhan 
+         murid Raden Tjetje Somantri, yaitu Irawati Durban Ardjo. Beliau melakukan penyempurnaan 
+         pada struktur gerakan serta desain kostum agar terlihat lebih megah dan menyerupai burung 
+         merak yang sesungguhnya. Salah satu ciri khas yang ditambahkan adalah penggunaan sayap 
+         yang dapat dibentangkan oleh penari serta hiasan kepala (siger) yang menyerupai kepala burung merak. 
+      </p>
+
+      <p>
+         Meskipun gerakan aslinya terinspirasi dari merak jantan, tarian ini dibawakan oleh penari perempuan 
+         dengan gerakan yang gemulai namun tetap menunjukkan kesan ceria dan penuh percaya diri. 
+         Berkat estetika visualnya yang memukau, Tari Merak tidak hanya menjadi kebanggaan masyarakat Sunda, 
+         tetapi juga menjadi salah satu duta budaya Indonesia di kancah internasional.
+      </p>
+   </section>
+
+   <!-- ===== GERAKAN & CIRI KHAS ===== -->
+    <section id="gerakan" style="display: none;">
+   <h1>Gerakan & Ciri Khas Tari Merak</h1>
+
+   <!-- VIDEO -->
+   <iframe 
+      src="https://www.youtube.com/embed/sgA_c-yzL5c"
+      title="Tari Merak"
+      frameborder="0"
+      allowfullscreen>
+   </iframe>
+
+   <p>
+      Gerakan dasar:
+   </p>
+
+   <P>
+      Jika kamu tertarik untuk mempelajari tari merak, maka kamu bisa mempelajari gerakan 
+      dasarnya yang meliputi gerakan kepala, tangan, kaki serta sampuran. Untuk lebih jelasnya, 
+      berikut ini adalah gerakan dasar tari merak yang perlu kamu ketahui.
+   </P>
+
+   <ol>
+      <li>
+         <strong>Galier</strong><br>
+         Galier adalah gerakan yang mengharuskan penari untuk memutar kepalanya ke arah 
+         kanan, kiri, depan, dan belakang.
+      </li>
+
+      <li>
+         <strong>Gilek</strong><br>
+         Gilek adalah gerakan yang mengharuskan penari untuk menggelengkan kepalanya ke arah kanan dan ke kiri.
+      </li>
+
+      <li>
+         <strong>Ukel</strong><br>
+         Ukel adalah gerakan tangan pada tari merak yang dilakukan secara luwes saat 
+         memutar tangan sesuai irama dari musik pengiring.
+      </li>
+
+      <li>
+         <strong>Selut</strong><br>
+         Selut adalah gerakan tangan ke kanan dan ke kiri bersamaan dengan gerakan 
+         mendorong tangan ke depan atau ke atas sesuai irama secara bergantian.
+      </li>
+
+      <li>
+         <strong>Tepak Bahu</strong><br>
+         Gerakan tepak bahu adalah gerakan penari saat menepuk pundak dengan salah satu 
+         tangannya. Tepak bahu dilakukan dengan posisi tangan bersilang dalam dua putaran tangan.
+      </li>
+
+      <li>
+         <strong>Capang</strong><br>
+         Capang adalah gerakan penari merak ketika menekuk satu tangan
+      </li>
+
+      <li>
+         <strong>Nyawang</strong><br>
+         Nyawang adalah gerakan isyarat tangan dari penari yang menunjukkan kepada para 
+         penonton bahwa penari sedang melihat jauh ke depan
+      </li>
+
+      <li>
+         <strong>Lontang Kanan jeung Kiri</strong><br>
+         Lontang kanan atau Lontang kiri adalah gerakan tangan penari menggunakan kedua 
+         tangannya untuk saling bergerak secara bergantian.
+      </li>
+
+      <li>
+         <strong>Duduk Deku</strong><br>
+         Duduk Deku adalah gerakan panri yang duduk bersila atau melipat kakinya ke bawah.
+      </li>
+
+      <li>
+         <strong>Seser</strong><br>
+         Seser adalah gerakan kaki yang mengharuskan panri untuk menggeser kaki ke kanan dan ke kiri.
+      </li>
+
+      <li>
+         <strong>Siring</strong><br>
+         Sirig adalah gerakan kaki penari saat menggoyangkan kedua kakinya secara bersama sama.
+      </li>
+   </ol>
+
+   <p>
+      Gerakan Tari Merak
+   </p>
+
+   <P>
+      Jika sebelumnya membahas tentang gerakan dasar dari tari merak, maka dibawah ini adalah 
+      beberapa pengaplikasian gerakan dasar menjadi gerakan yang indah.
+   </P>
+
+   <ol>
+      <li>
+         <strong>Kaki digerakan seperti sedang mengais tanah, sambil menggelengkan kepala layaknya
+            burung merak. Posisi tangan berada di samping tubuh dan jari memegang selendang 
+         berbentuk sayap merak. Beberapa kali tangan diayunkan ke depan dan belakang. </strong><br>
+      </li>
+
+      <li>
+         <strong>Bahu digerakkan ke depan dan ke belakang. Ketika melakukan posisi tubuh jongkok 
+            dan kedua tangan diletakkan di bagian atas.</strong><br>
+      </li>
+
+      <li>
+         <strong>Gerakan tubuh ke depan dan belakang, sambil memperhatikan tempo lagu. Jika lagu
+            cepat, tubuh digerakan lebih cepat, ketika melambat maka tubuh juga akan ikut melambat </strong><br>
+      </li>
+
+      <li>
+         <strong>Gerakan tubuh ke depan dan belakang, sambil memperhatikan tempo lagu. Jika lagu
+            cepat, tubuh digerakan lebih cepat, ketika melambat maka tubuh juga akan ikut melambat. </strong><br>
+      </li>
+
+      <li>
+         <strong>Gerakan tubuh ke depan dan belakang, sambil memperhatikan tempo lagu. Jika lagu
+            cepat, tubuh digerakan lebih cepat, ketika melambat maka tubuh juga akan ikut melambat. </strong><br>
+      </li>
+   </ol>
+
+   <p>
+      Pola Lantai Tari Merak
+   </p>
+
+   <P>
+      Pola lantai melingkar jadi salah satu bagian dari pola lantai garis lengkung. 
+      Dalan tarian merak, pola lantai ini dilakukan secara melingkar dan menghadap ke arah luar.
+   </P>
+
+   <ol>
+      <li>
+         <strong>Pola lantai melingkar</strong><br>
+         Pola lantai melingkar jadi salah satu bagian dari pola lantai garis lengkung. Dalan tarian merak, 
+         pola lantai ini dilakukan secara melingkar dan menghadap ke arah luar.
+      </li>
+
+      <li>
+         <strong>Pola lantai horizontal</strong><br>
+         Selain menggunakan pola lantai melingkar, tari merak juga menggunakan pola lantai 
+         horizontal. Pola horizontal yaitu dengan membentuk formasi lurus ke samping kanan atau kiri.
+      </li>
+
+      <li>
+         <strong>Pola lantai diagonal</strong><br>
+         Pola lantai yang terakhir adalah pola lantai diagonal, dalam pola lantai ini, penari akan 
+         bergerak membentuk formasi secara melintang dari sudut kiri bawah ke sudut kanan 
+         atas dan juga sebaliknya. Biasanya pola lantai ini dilakukan secara berhadapan.
+      </li>
+   </ol>
+
+   <p>
+      Ciri Khas Tari Merak
+   </p>
+
+   <P>
+      Setiap tarian daerah tentu memiliki ciri dan karakteristiknya masing-masing termasuk tari 
+      merak. Tari ini memiliki karakteristik dan ciri yang membedakan dengan tari lainnya. Hal ini 
+      terlihat dari gerakan penari, properti, dan juga penyajiannya yang unik. Karakteristik dan ciri 
+      tari merak sebagai berikut:
+   </P>
+
+   <ol>
+      <li>
+         <strong>Kostum Penari Tari Merak</strong><br>
+         Kostum atau busana penari dalam tari merak di desain seperti burung merak lengkap
+         dengan bulu-bulunya. Hal ini ditampilkan dalam penggunaan warna biru, hijau, dan 
+         hitam sebagai ciri khas dari burung merak itu sendiri. Kostum penari dilengkapi juga 
+         dengan sayap yang dapat dibentangkan. Selain itu, juga pada bagian kepala dilengkapi dengan mahkota.
+
+         <img src="assets\img\Gkhas.jpeg" alt="Gerakan Galier">
+      </li>
+
+      <li>
+         <strong>Gerakan</strong><br>
+         Gerakan penari merak sebisa mungkin mengikuti tingkah laku burung merak jantan 
+         ketika mendekati burung merak betina. Kemudian, gerakan-gerakan itu dilakukan dengan gemulai.
+      </li>
+
+      <li>
+         <strong>Dipentaskan secara berpasangan</strong><br>
+         Dalam penampilannya, tari merak dipentaskan secara berpasangan sebagai simbol antara merak jantan dan merak betina.
+      </li>
+   </ol>
+
+   </section>
+
+   <!-- ===== SURVEI ===== -->
+   <section id="survei" style="display: none;">
+      <h1>Survei Pengunjung RESAKA</h1>
+
+      <p>
+         Terima kasih telah mengunjungi booth kami.  
+         Silakan isi survei singkat melalui QR code di bawah ini.
+      </p>
+
+      <p style="margin-top: 1rem;">
+         Scan QR untuk mengisi survei
+      </p>
+
+      <img src="assets/img/survei_codebg.jpeg" alt="QR Survei">
+
+      <a href="https://forms.gle/aERpudZPgwP6Thzu9" target="_blank" class="btn-survei">
+         Isi Survei Sekarang
+      </a>
+
+      <div class="thanks-box">
+         <p>Terima kasih atas waktu dan penilaiannya 🙏</p>
+      </div>
+
+      <!-- WALL KOMENTAR -->
+      <div class="comment-section">
+
+         <h2>💬 Kesan & Pesan Pengunjung</h2>
+
+         <div id="comment-list">
+            <p>Memuat komentar...</p>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- ===== TIM ===== -->
+   <section id="tim" style="display: none;">
+      <h1>Tim</h1>
+
+      <!-- Ketua -->
+      <div class="team-leader">
+         <img src="assets\img\bulat_2.jpeg" alt="Ketua">
+         <h3>MUHAMMAD KHOLILUR ROHMAN</h3>
+         <p>2410631160079</p>
+      </div>
+
+      <!-- Anggota -->
+      <div class="team-grid">
+         <!-- Anggota 1 -->
+         <div class="team-card">
+            <img src="assets\img\npi.jpeg" alt="">
+            <h3>NUR FITRI ARYANTI</h3>
+            <p>2410631160086</p>
+         </div>
+
+         <!-- Anggota 2 --> 
+         <div class="team-card">
+            <img src="assets\img\hfz.jpeg" alt="">
+            <h3>HAFIZH HUSNULLABIB ACHMAD</h3>
+            <p>2410631160119</p>
+         </div>
+
+         <!-- Anggota 3 -->
+         <div class="team-card">
+            <img src="assets\img\rh.jpeg" alt="">
+            <h3>RAFA HERU PUTRA RASYID</h3>
+            <p>2410631160130</p>
+         </div>
+
+         <!-- Anggota 4 -->
+         <div class="team-card">
+            <img src="assets\img\fzn.jpeg" alt="">
+            <h3>FAUZAN ADIRA ADRIYANTO</h3>
+            <p>2410631160114</p>
+         </div>
+
+         <!-- Anggota 5 -->
+         <div class="team-card">
+            <img src="assets/img/perfil.png" alt="">
+            <h3>ARLYN YANUARI</h3>
+            <p>2410631160053</p>
+         </div>
+
+         <!-- Anggota 6 -->
+         <div class="team-card">
+            <img src="assets/img/perfil.png" alt="">
+            <h3>RIZAL TRI MULIA RAMADHAN</h3>
+            <p>2410631160135</p>
+         </div>
+
+         <!-- Anggota 7 -->
+         <div class="team-card">
+            <img src="assets/img/perfil.png" alt="">
+            <h3>MUHAMMAD RIFKY DWINOVA AKBAR</h3>
+            <p>2410631160028</p>
+         </div>
+
+         <!-- Anggota 8 -->
+         <div class="team-card">
+            <img src="assets/img/perfil.png" alt="">
+            <h3>MUHAMMAD ANDHIKA AL'ARSY</h3>
+            <p>2410631160074</p>
+         </div>
+      </div>
+
+      <!-- ===== REPORT ===== -->
+<div class="report-section">
+   <h2>Dokumentasi Progres</h2>
+
+   <!-- Report 1 -->
+   <div class="report-card">
+      <img src="assets/img/perfil.png" alt="Dokumentasi 1">
+
+      <div class="report-text">
+         <h3>Dokumentasi Awal</h3>
+         <p>
+            Tahap awal perancangan proyek RESAKA, meliputi diskusi konsep,
+            pembagian tugas tim, dan perencanaan sistem robot.
+         </p>
+      </div>
+   </div>
+
+   <!-- Report 2 -->
+   <div class="report-card">
+      <img src="assets/img/perfil.png" alt="Dokumentasi 2">
+
+      <div class="report-text">
+         <h3>Dokumentasi 2</h3>
+         <p>
+            Proses pengembangan mulai dilakukan, termasuk perakitan awal
+            dan pengujian sistem dasar robot.
+         </p>
+      </div>
+   </div>
+
+</div>
+   </section>
+
+</main>
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+      <script>
+      function showSection(sectionId) {
+         // sembunyikan semua section
+         document.getElementById('beranda').style.display = 'none';
+         document.getElementById('filosofi').style.display = 'none';
+         document.getElementById('perkembangan').style.display = 'none';
+         document.getElementById('nilai').style.display = 'none';
+         document.getElementById('sejarah').style.display = 'none';
+         document.getElementById('gerakan').style.display = 'none';
+         document.getElementById('survei').style.display = 'none';
+         document.getElementById('tim').style.display = 'none';
+
+         // tampilkan yang dipilih
+         document.getElementById(sectionId).style.display = 'block';
+      }
+
+               const apiURL = "https://script.google.com/macros/s/AKfycbyIwponYD_h_lYk414D03HivPa39iaRnfc3Ll0S5VoAzvy-wIC_CIb8WLYP3im5dDM/exec";
+
+         fetch(apiURL)
+         .then(response => response.json())
+         .then(data => {
+
+            const commentList = document.getElementById("comment-list");
+
+            commentList.innerHTML = "";
+
+            data.reverse().forEach(item => {
+
+               commentList.innerHTML += `
+               <div class="comment-card">
+
+                  <div class="comment-header">
+                     <span class="comment-name">${item.nama}</span>
+                     <span class="comment-status">${item.status}</span>
+                  </div>
+
+                  <div class="comment-text">
+                     ${item.komentar}
+                  </div>
+
+                  <div class="comment-time">
+                     ${new Date(item.waktu).toLocaleString('id-ID')}
+                  </div>
+
+               </div>
+               `;
+            });
+
+         })
+         .catch(error => {
+            document.getElementById("comment-list").innerHTML =
+               "<p>Gagal memuat komentar.</p>";
+               
+            console.log(error);
+         });
+      </script>
+   </body>
+</html>
+
