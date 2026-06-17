@@ -514,16 +514,33 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
 }
 
-/* HP */
+/* HP & Tablet */
 @media screen and (max-width: 768px) {
-  .team-card {
-    width: 100%;
-    max-width: 280px;
+
+  .team-row {
+    gap: .5rem;
+    justify-content: center;
   }
 
-  .ketua-card {
-    transform: none;
+  .team-card {
+    width: 100px;
+    padding: .5rem;
   }
+
+  .team-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .team-card h3 {
+    font-size: .65rem;
+    line-height: 1.2;
+  }
+
+  .team-card p {
+    font-size: .55rem;
+  }
+
 }
 
 /*=============== REPORT SECTION ===============*/
