@@ -468,34 +468,14 @@ body.dark-theme {
   color: var(--title-color);
 }
 
-/* Ketua */
-.team-leader {
-  margin-bottom: 2rem;
-}
+/* ===== Layout Tim Baru ===== */
 
-.team-leader img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: auto;
-  object-fit: cover;
-  box-shadow: 0 4px 12px var(--shadow-color);
-}
-
-.team-leader h3 {
-  margin-top: 0.5rem;
-  color: var(--title-color);
-}
-
-.team-leader p {
-  font-size: var(--smaller-font-size);
-}
-
-/* Grid anggota */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* default HP */
+.team-row {
+  display: flex;
+  justify-content: center;
   gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 /* Card anggota */
@@ -504,27 +484,29 @@ body.dark-theme {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 4px 12px var(--shadow-color);
-  transition: 0.3s;
+  transition: .3s;
+  width: 220px;
 }
 
 .team-card:hover {
   transform: translateY(-5px);
 }
 
-/* Foto anggota */
+/* Foto */
 .team-card img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   margin: auto;
   object-fit: cover;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 /* Nama */
 .team-card h3 {
-  font-size: var(--normal-font-size);
+  font-size: .9rem;
   color: var(--title-color);
+  margin-bottom: .25rem;
 }
 
 /* NIM */
@@ -532,9 +514,15 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
 }
 
-@media screen and (min-width: 768px) {
-  .team-grid {
-    grid-template-columns: repeat(4, 1fr);
+/* HP */
+@media screen and (max-width: 768px) {
+  .team-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .ketua-card {
+    transform: none;
   }
 }
 
